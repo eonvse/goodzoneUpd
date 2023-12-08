@@ -14,7 +14,7 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body class="font-sans antialiased bg-yellow-200">
+    <body class="font-sans antialiased bg-amber-200">
         <div class="lg:container lg:mx-auto w-full lg:max-w-screen-lg h-screen">
             <!-- Page Heading -->
             @include('layouts.header')

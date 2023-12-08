@@ -3,7 +3,7 @@
         <div class='text-green-500 font-bold text-2xl text-center'>Антикафе 
             <div id="logo" class="font-normal text-blue-500 text-4xl md:text-3xl">Good Zone</div>
         </div>
-        <div class='flex text-blue-500 font-medium text-lg pl-5'> 
+        <div class='flex text-blue-500 font-semibold text-lg pl-5'> 
             <div>
             <svg class="h-6 w-6"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
@@ -41,31 +41,31 @@
                 @endforeach
             </div>
         </div>
-        <div class='text-blue-800 font-medium text-lg w-4/5 pl-5'>
+        <div class='text-blue-800 font-semibold text-lg w-4/5 pl-5'>
             Мероприятия для школьников: День именинника, 8 марта, 23 февраля, Новогодние вечеринки, Празднование начала и окончания учебного года.
         </div>
-        <div class='text-pink-700 font-medium text-lg pl-20 mr-5'>
+        <div class='text-pink-700 font-semibold text-lg pl-20 mr-5'>
             День рождения в антикафе: уютная атмосфера, индивидуальный подход, развлекательные программы.
         </div>
-        <div class='text-gray-800 font-medium text-lg w-4/5 pl-10'>
+        <div class='text-gray-800 font-semibold text-lg w-4/5 pl-10'>
             Сити-квест: незабываемое приключение для любой компании.
         </div>
-        <div class='text-red-600 font-semibold text-2xl text-center'>Бронируйте время.</div>
-        <div class='text-blue-800 font-semibold text-2xl text-center pl-20'>
-            <a class="flex mx-1 hover:text-green-500 transition-all rounded" href="tel:+79148767422">
+        <div class='text-red-600 font-bold text-2xl text-center'>Бронируйте время.</div>
+        <div class='text-blue-800 font-bold text-2xl text-center pl-20'>
+            <a class="flex mx-1 hover:text-green-700 transition-all rounded" href="tel:+79148767422">
                 <svg class="h-8 w-8"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />  <path d="M15 7a2 2 0 0 1 2 2" />  <path d="M15 3a6 6 0 0 1 6 6" /></svg>
                 <span class="mx-1">+79148767422</span>
             </a>
         </div>
-        <div class='text-red-600 font-semibold text-2xl text-center'>Отдыхайте с удовольствием.</div>
-        <div class='text-red-600 font-semibold text-2xl text-center'>Сделайте свой день незабываемым.</div>
+        <div class='text-red-600 font-bold text-2xl text-center'>Отдыхайте с удовольствием.</div>
+        <div class='text-red-600 font-bold text-2xl text-center'>Сделайте свой день незабываемым.</div>
     </div>     
     
     <div class="align-top md:table-cell min-h-full max-h-full h-full md:pt-8 ">
     @foreach($news as $item)
         <a name="item{{ $item->id }}"></a>
-        <div id="news-item" class="bg-gradient-to-r from-white to-yellow-300">
-            <div id="news-item-caption" class="w-full text-xl text-center font-bold text-blue-500 overflow-ellipsis mt-7 bg-gradient-to-r from-yellow-300 to-white">
+        <div id="news-item" class="bg-gradient-to-r from-white to-amber-300">
+            <div id="news-item-caption" class="w-full text-xl text-center font-bold text-blue-500 overflow-ellipsis mt-7 bg-gradient-to-r from-amber-300 to-white">
                 {{ $item->name }}
             </div>
             <div id="news-item-body" class="w-full mb-3 ">
@@ -74,7 +74,7 @@
             @endif
                         
             @if(!empty($item->body))
-                <div class="md:transform md:-rotate-1 font-medium bg-gradient-to-r from-white p-2">{!! $item->body !!}</div>
+                <div class="md:transform md:-rotate-1 font-semibold bg-gradient-to-r from-white p-2">{!! $item->body !!}</div>
             @endif
             </div>
         </div>

@@ -1,0 +1,1 @@
+<a {{ $attributes }} class="border-solid border border-gray-500 rounded bg-gradient-to-r from-green-100  to-blue-100 hover:from-green-300 hover:to-blue-300 hover:text-white p-2">{{ $slot }}</a>

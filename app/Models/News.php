@@ -14,4 +14,10 @@ class News extends Model
     public function user() {
         return $this->belongsTo(User::class,'user_id','id');
     }
+
+    public function getCreatedAttribute() {
+            
+            return date('d.m.Y h:i', strtotime($this->created_at));
+    }
+
 }

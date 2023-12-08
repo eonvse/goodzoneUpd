@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\NewsController;
+use App\Http\Controllers\ImagesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,6 +33,15 @@ Route::middleware('auth')->group(function () {
     Route::post('/news/update',     [NewsController::class, 'update'])      ->name('news.update');
     Route::get('/news/delete/{id}', [NewsController::class, 'delete'])      ->name('news.delete');
     Route::post('news/destroy',     [NewsController::class, 'destroy'])     ->name('news.destroy');
+
+    Route::get('/images',             [ImagesController::class, 'dashboard']) ->name('images.dashboard');
+    Route::get('/images/create',      [ImagesController::class, 'create'])    ->name('images.create');
+    Route::post('/images/store',      [ImagesController::class, 'store'])     ->name('images.store');
+    Route::get('/images/edit/{id}',   [ImagesController::class, 'edit'])      ->name('images.edit');
+    Route::post('/images/update',     [ImagesController::class, 'update'])    ->name('images.update');
+    Route::get('/images/delete/{id}', [ImagesController::class, 'delete'])    ->name('images.delete');
+    Route::post('images/destroy',     [ImagesController::class, 'destroy'])   ->name('images.destroy');
+
 });
 
 require __DIR__.'/auth.php';

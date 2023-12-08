@@ -11,7 +11,13 @@ use App\Models\News;
 class NewsController extends Controller
 {
     //
+    const COUNT_INDEX = 5;
     const COUNT_DASH = 10;
+
+    public function welcome()
+    {
+        return view('welcome.index',['news' => News::latest()->simplePaginate(self::COUNT_INDEX)]);
+    }
 
     public function dashboard()
     {

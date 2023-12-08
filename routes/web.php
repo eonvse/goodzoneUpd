@@ -17,9 +17,8 @@ use App\Http\Controllers\ImagesController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [NewsController::class, 'welcome']) -> name('welcome.index');
+Route::get('/photo', [ImagesController::class, 'welcome']) -> name('welcome.photo');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

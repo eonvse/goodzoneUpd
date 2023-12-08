@@ -1,0 +1,17 @@
+@font-face {
+	font-family: 'Ouroboros'; 
+	src: local('Ouroboros'),
+		url(fonts/ouroboros.ttf); 
+}
+
+#logo {font-family: "Ouroboros";}
+
+header {position: fixed;}
+.flayer {padding-top: 5rem;}
+
+@media (max-width: 768px) { 
+  header {position: relative;}
+  .flayer {padding-top: 0;}
+  
+ }
+ 

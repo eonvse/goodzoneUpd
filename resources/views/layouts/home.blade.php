@@ -11,6 +11,14 @@
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+
+        @if (Route::is('welcome.photo'))
+        <!-- Lightbox2 -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="{{ url('/') }}/lightbox2/css/lightbox.css" />
+        <script src="{{ url('/') }}/lightbox2/js/lightbox.js"></script>
+        @endif
+
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>

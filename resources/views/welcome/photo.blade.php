@@ -1,5 +1,5 @@
 <x-home-layout>
-    <div class='flex-1 text-green-500 font-extrabold text-2xl text-center md:pt-12'>Фотогалерея 
+    <div class='flex-1 text-green-500 font-extrabold text-3xl text-center md:mt-[60px] mb-2'>Фотогалерея 
         <span id="logo" class="font-normal text-blue-500 text-4xl md:text-3xl">Good&nbsp;Zone</span>
     </div>
     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">

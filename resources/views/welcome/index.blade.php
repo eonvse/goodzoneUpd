@@ -1,7 +1,7 @@
 <x-home-layout>
     <div class="flex-1 space-y-4 space-x-1 align-top md:table-cell mx-2 w-full md:w-1/2 flayer">
         <div class='text-green-500 font-bold text-2xl text-center'>Антикафе 
-            <div id="logo" class="font-normal text-blue-500 text-4xl md:text-3xl">Good Zone</div>
+            <div id="head_logo" class="font-normal text-blue-500 text-4xl md:text-3xl">Good Zone</div>
         </div>
         <div class='flex text-blue-500 font-semibold text-lg pl-5'> 
             <div>
@@ -30,7 +30,7 @@
                 @foreach ($news as $item)
                     @if ($loop->iteration <=3)
                         <div class="flex-1 w-full min-w-2/3 text-sm text-gray-500 mb-2">
-                            <a href="#item{{ $item->id }}" class="flex flex-row-reverse w-full">
+                            <a href="#item{{ $item->id }}" class="flex flex-row-reverse w-full" id="item{{$loop->iteration}}">
                                 <span class="underline flex flex-grow mx-1">{{ $item->name }}</span> 
                                 <span class="flex flex-grow-0 w-6">
                                     <svg class="h-5 w-5 mx-auto"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M4 21v-13a3 3 0 0 1 3 -3h10a3 3 0 0 1 3 3v6a3 3 0 0 1 -3 3h-9l-4 4" />  <line x1="12" y1="11" x2="12" y2="11.01" />  <line x1="8" y1="11" x2="8" y2="11.01" />  <line x1="16" y1="11" x2="16" y2="11.01" /></svg>
@@ -41,13 +41,13 @@
                 @endforeach
             </div>
         </div>
-        <div class='text-blue-800 font-semibold text-lg w-4/5 pl-5'>
+        <div class='text-blue-800 font-semibold text-lg w-4/5 pl-5' id="block1">
             Мероприятия для школьников: День именинника, 8 марта, 23 февраля, Новогодние вечеринки, Празднование начала и окончания учебного года.
         </div>
-        <div class='text-pink-700 font-semibold text-lg pl-20 mr-5'>
+        <div class='text-pink-700 font-semibold text-lg pl-20 mr-5' id="block2">
             День рождения в антикафе: уютная атмосфера, индивидуальный подход, развлекательные программы.
         </div>
-        <div class='text-gray-800 font-semibold text-lg w-4/5 pl-10'>
+        <div class='text-gray-800 font-semibold text-lg w-4/5 pl-10' id="block3">
             Сити-квест: незабываемое приключение для любой компании.
         </div>
         <div class='text-red-600 font-bold text-2xl text-center'>Бронируйте время.</div>

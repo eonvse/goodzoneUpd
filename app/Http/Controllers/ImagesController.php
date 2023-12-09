@@ -11,7 +11,13 @@ use App\Models\Images;
 class ImagesController extends Controller
 {
     //
+    const COUNT_INDEX = 20;
     const COUNT_DASH = 10;
+
+    public function welcome()
+    {
+        return view('welcome.photo', ['photos' => Images::latest()->simplePaginate(self::COUNT_INDEX)]);
+    }
 
     public function dashboard()
     {
@@ -75,7 +81,7 @@ class ImagesController extends Controller
 
             //Создаем миниатюру изображения и сохраняем ее
             $thumbnail = Image::make('storage/images/'.$filename);
-            $thumbnail->fit(100, 100);
+            $thumbnail->fit(200);
             $thumbnail->save('storage/images/th_'.$filename);
 
             $resize = Image::make('storage/images/'.$filename)->widen(800);

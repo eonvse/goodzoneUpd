@@ -16,37 +16,37 @@
 #item1 {
 	animation-name: onset_right;
 	animation-duration: 1s;
-	animation-delay: 1s;
+	animation-delay: 2s;
 }
 
 #item2 {
-	animation-name: onset_right;
+	animation-name: onset_top;
 	animation-duration: 1s;
-	animation-delay: 2s;
+	animation-delay: 3s;
 }
 
 #item3 {
-	animation-name: onset_right;
+	animation-name: onset_top;
 	animation-duration: 1s;
-	animation-delay: 2s;
+	animation-delay: 4s;
 }
 
 #block1 {
 	animation-name: onset_left;
 	animation-duration: 1s;
-	animation-delay: 2s;
+	animation-delay: 4s;
 }
 
 #block2 {
 	animation-name: onset_right;
 	animation-duration: 1s;
-	animation-delay: 3s;
+	animation-delay: 5s;
 }
 
 #block3 {
 	animation-name: onset_bottom;
 	animation-duration: 1s;
-	animation-delay: 4s;
+	animation-delay: 6s;
 }
 
 
@@ -75,9 +75,9 @@
     transform: translateX(-100%);
     opacity: 0%;
   }
-  90% {
+  80% {
     transform: translateX(10px);
-    opacity: 90%;
+    opacity: 80%;
   }
   to {
     transform: translateX(0);
@@ -90,9 +90,9 @@
     transform: translateX(100%);
     opacity: 0%;
   }
-  90% {
+  80% {
     transform: translateX(-10px);
-    opacity: 90%;
+    opacity: 80%;
   }
   to {
     transform: translateX(0);
@@ -105,9 +105,24 @@
     transform: translateY(100%);
     opacity: 0%;
   }
-  90% {
+  80% {
     transform: translateY(-10px);
-    opacity: 90%;
+    opacity: 80%;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 100%;
+  }
+}
+
+@keyframes onset_top {
+  from {
+    transform: translateY(-100%);
+    opacity: 0%;
+  }
+  80% {
+    transform: translateY(10px);
+    opacity: 80%;
   }
   to {
     transform: translateY(0);

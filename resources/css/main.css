@@ -13,6 +13,12 @@
 	animation-duration: 2s;
 }
 
+#img_mob {
+	animation-name: onset_top;
+	animation-duration: 1s;
+	animation-delay: 2s;
+}
+
 #item1 {
 	animation-name: onset_right;
 	animation-duration: 1s;
@@ -20,15 +26,15 @@
 }
 
 #item2 {
-	animation-name: onset_top;
+	animation-name: onset_bottom;
 	animation-duration: 1s;
 	animation-delay: 3s;
 }
 
 #item3 {
-	animation-name: onset_top;
+	animation-name: onset_bottom;
 	animation-duration: 1s;
-	animation-delay: 4s;
+	animation-delay: 3s;
 }
 
 #block1 {
@@ -47,6 +53,15 @@
 	animation-name: onset_bottom;
 	animation-duration: 1s;
 	animation-delay: 6s;
+}
+
+#phone {
+	animation-name: vibration;
+	animation-duration: 1s;
+	animation-delay: 7s;
+	animation-timing-function: linear;
+	animation-iteration-count: 3;
+
 }
 
 
@@ -128,4 +143,19 @@
     transform: translateY(0);
     opacity: 100%;
   }
+}
+
+@keyframes vibration {
+  from {
+    transform: rotateZ(0deg);
+  }
+  25% {
+    transform: rotateZ(5deg);
+  }
+  75% {
+  	transform: rotateZ(-5deg);
+  }
+  to {
+  	transform: rotateZ(0deg);
+	}
 }

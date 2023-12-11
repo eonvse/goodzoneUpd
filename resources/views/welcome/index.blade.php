@@ -20,13 +20,13 @@
                 @if($loop->first)
                     @if(!empty($item->image))
                         <div class="max-w-1/3">
-                            <img src="storage/posts/th_{{ $item->image }}" alt="" class="max-w-1/3" />
+                            <img src="storage/posts/th_{{ $item->image }}" alt="" class="max-w-1/3" id="img_mob" />
                         </div>
                     @endif
                 @endif
             @endforeach
                         
-            <div class="min-w-2/3">
+            <div class="min-w-2/3 px-2">
                 @foreach ($news as $item)
                     @if ($loop->iteration <=3)
                         <div class="flex-1 w-full min-w-2/3 text-sm text-gray-500 mb-2">
@@ -54,7 +54,7 @@
         <div class='text-blue-800 font-bold text-2xl text-center pl-20'>
             <a class="flex mx-1 hover:text-green-700 transition-all rounded" href="tel:+79148767422">
                 <svg class="h-8 w-8"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />  <path d="M15 7a2 2 0 0 1 2 2" />  <path d="M15 3a6 6 0 0 1 6 6" /></svg>
-                <span class="mx-1">+79148767422</span>
+                <span class="mx-1" id="phone">+79148767422</span>
             </a>
         </div>
         <div class='text-red-600 font-bold text-2xl text-center'>Отдыхайте с удовольствием.</div>

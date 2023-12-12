@@ -28,7 +28,7 @@
             @include('layouts.header')
 
             <!-- Page Content -->
-            <main class="flex flex-wrap md:table md:table-row w-full">
+            <main class="w-full">
                 {{ $slot }}
             </main>
         </div>

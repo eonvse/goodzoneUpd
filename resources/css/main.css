@@ -1,3 +1,7 @@
+* {
+  backface-visibility: hidden;
+}
+
 @font-face {
 	font-family: 'Ouroboros'; 
 	src: local('Ouroboros'),
@@ -44,7 +48,7 @@
 }
 
 #block2 {
-	animation-name: onset_right;
+	animation-name: onset_top;
 	animation-duration: 1s;
 	animation-delay: 5s;
 }
@@ -64,6 +68,11 @@
 
 }
 
+#nav_mob {
+  z-index: 999;
+  transform: translate3d(0, 0, 0);
+  opacity: 99%;
+}
 
 .flayer {padding-top: 5rem;}
 

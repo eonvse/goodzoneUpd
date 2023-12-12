@@ -44,7 +44,7 @@
         </div> 
         </div>
     </nav>   
-    <nav class="fixed bottom-0 flex w-full items-center justify-left shadow-2xl visible md:invisible bg-gradient-to-r from-white to-amber-300 py-1 text-gray-600">
+    <nav class="fixed bottom-0 flex w-full items-center justify-left shadow-2xl visible md:invisible bg-gradient-to-r from-white to-amber-300 py-1 text-gray-600" id="nav_mob">
         <div class="flex-1 text-center">
             <a class="transition-all rounded h-10 w-10" href="https://vk.com/uigoodzone"><x-icon-vk /></a>
         </div> 

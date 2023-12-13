@@ -23,7 +23,7 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="font-sans antialiased bg-amber-200">
-        <div class="lg:container lg:mx-auto w-full lg:max-w-screen-lg h-screen">
+        <div class="lg:container lg:mx-auto w-full lg:max-w-screen-lg">
             <!-- Page Heading -->
             @include('layouts.header')
 

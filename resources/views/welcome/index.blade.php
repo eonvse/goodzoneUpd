@@ -1,5 +1,5 @@
 <x-home-layout>
-    <div class="flex-1 space-y-4 space-x-1 align-top md:table-cell mx-2 w-full md:w-1/2 flayer">
+    <div class="flex-1 space-y-4 align-top md:table-cell p-2 w-full md:w-1/2 flayer md:pt-[60px]">
         <div class='text-green-500 font-bold text-2xl text-center'>Антикафе 
             <div id="head_logo" class="font-normal text-blue-500 text-4xl md:text-3xl">Good Zone</div>
         </div>
@@ -61,7 +61,7 @@
         <div class='text-red-600 font-bold text-2xl text-center'>Сделайте свой день незабываемым.</div>
     </div>     
     
-    <div class="align-top md:table-cell min-h-full max-h-full h-full md:pt-8 ">
+    <div class="align-top md:table-cell min-h-full max-h-full h-full md:pt-8 pb-[40px] md:pb-0">
     @foreach($news as $item)
         <a name="item{{ $item->id }}"></a>
         <div id="news-item" class="bg-gradient-to-r from-white to-amber-300">

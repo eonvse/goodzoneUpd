@@ -44,7 +44,8 @@
         </div> 
         </div>
     </nav>   
-    <nav class="fixed bottom-0 flex w-full items-center justify-left shadow-2xl visible md:invisible bg-gradient-to-r from-white to-amber-300 py-1 text-gray-600" id="nav_mob">
+    <nav class="fixed bottom-0 left-0 w-full items-center justify-left shadow-2xl visible md:invisible bg-gradient-to-r from-white to-amber-300 py-1 text-gray-600" id="nav_mob">
+        <div class="flex">
         <div class="flex-1 text-center">
             <a class="transition-all rounded h-10 w-10" href="https://vk.com/uigoodzone"><x-icon-vk /></a>
         </div> 
@@ -64,8 +65,8 @@
             </a>
         </div>
         <div class="flex-1 text-center">
-            <a class="hover:text-amber-600 transition-all rounded" href="tel:+79148767422">
-                <svg class="h-10 w-10 mx-auto"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />  <path d="M15 7a2 2 0 0 1 2 2" />  <path d="M15 3a6 6 0 0 1 6 6" /></svg>
+            <a class="hover:text-amber-600 transition-all rounded" href="tel:+79148767422" >
+                <svg id="mob_menu_phone" class="h-10 w-10 mx-auto"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />  <path d="M15 7a2 2 0 0 1 2 2" />  <path d="M15 3a6 6 0 0 1 6 6" /></svg>
             </a>
         </div>
         <div class="flex-1 text-center">
@@ -81,6 +82,7 @@
                 </svg>
             </a>
         </div>
+    </div>
     </nav>               
 
 </header>

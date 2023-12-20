@@ -1,7 +1,7 @@
 <x-home-layout>
-    <div class='flex-1 text-green-500 font-extrabold text-3xl text-center md:mt-[60px] mb-2'>        
-        <x-newYear />
-        Фотогалерея 
+    <div class='flex-1 text-center md:mt-[60px]'>        
+        <x-newYear class="py-2 md:py-0" />
+        <div class="text-green-500 font-extrabold text-3xl pt-4 md:pt-2">Фотогалерея</div> 
         <div id="head_logo" class="font-normal text-blue-500 text-4xl md:text-3xl">Good&nbsp;Zone</div>
     </div>
     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">

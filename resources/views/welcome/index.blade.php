@@ -1,5 +1,6 @@
 <x-home-layout>
     <div class="flex-1 space-y-4 align-top md:table-cell p-2 w-full md:w-1/2 flayer md:pt-[60px]">
+        <x-newYear />
         <div class='text-green-500 font-bold text-2xl text-center'>Антикафе 
             <div id="head_logo" class="font-normal text-blue-500 text-4xl md:text-3xl">Good Zone</div>
         </div>

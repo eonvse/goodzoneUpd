@@ -1,0 +1,109 @@
+.light {
+  margin: auto 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.light span {
+  position: relative;
+  margin: 0 15px;
+  padding: 0;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background: #fff;
+}
+.light span:before {
+  content: "";
+  position: absolute;
+  background: #222;
+  width: 7px;
+  height: 5px;
+  border-radius: 3px;
+  top: -4px;
+  left: 7px;
+}
+
+.light .red {
+  background-color: #fb4545;
+  animation: lightningRed 1s infinite;
+}
+
+.light .green {
+  background-color: #24D024;
+  animation: lightningGreen 1.5s infinite;
+}
+
+.light .yellow {
+  background-color: #fff952;
+  animation: lightningYellow 2s infinite;
+}
+
+.light .blue {
+  background-color: #0A53DE;
+  animation: lightningBlue 2.5s infinite;
+}
+
+.light .pink {
+  background-color: #f53896;
+  animation: lightningPink 2s infinite;
+}
+
+@keyframes lightningRed {
+  0% {
+    box-shadow: 5px 0 25px 5px #fb4545;
+  }
+  50% {
+    box-shadow: none;
+  }
+  100% {
+    box-shadow: 5px 0 25px 5px #fb4545;
+  }
+}
+@keyframes lightningGreen {
+  0% {
+    box-shadow: 5px 0 25px 5px #24D024;
+  }
+  50% {
+    box-shadow: none;
+  }
+  100% {
+    box-shadow: 5px 0 25px 5px #24D024;
+  }
+}
+@keyframes lightningYellow {
+  0% {
+    box-shadow: 5px 0 25px 5px #fff952;
+  }
+  50% {
+    box-shadow: none;
+  }
+  100% {
+    box-shadow: 5px 0 25px 5px #fff952;
+  }
+}
+@keyframes lightningBlue {
+  0% {
+    box-shadow: 5px 0 25px 5px #0A53DE;
+  }
+  50% {
+    box-shadow: none;
+  }
+  100% {
+    box-shadow: 5px 0 25px 5px #0A53DE;
+  }
+}
+@keyframes lightningPink {
+  0% {
+    box-shadow: 5px 0 25px 5px #f53896;
+  }
+  50% {
+    box-shadow: none;
+  }
+  100% {
+    box-shadow: 5px 0 25px 5px #f53896;
+  }
+}
+
+

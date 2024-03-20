@@ -15,12 +15,17 @@
         @if (Route::is('welcome.photo'))
         <!-- Lightbox2 -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-        <link rel="stylesheet" href="{{ url('/') }}/lightbox2/css/lightbox.css" />
-        <script src="{{ url('/') }}/lightbox2/js/lightbox.js"></script>
+        <link rel="stylesheet" href="/public/lightbox2/css/lightbox.css" />
+        <script src="/public/lightbox2/js/lightbox.js"></script>
         @endif
 
         <!-- Scripts -->
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
+        <style>
+            {!! Vite::content('resources/css/app.css') !!}
+        </style>
+        <script>
+            {!! Vite::content('resources/js/app.js') !!}
+        </script>
     </head>
     <body class="font-sans antialiased bg-amber-200">
         <div class="lg:container lg:mx-auto w-full lg:max-w-screen-lg">
